@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Style</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .box {
+      padding: 20px;
+      border-radius: 12px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .box1 {
+      background-color: #4CAF50;
+      border: 3px solid #2e7d32;
+    }
+
+    .box2 {
+      background-color: #2196F3;
+      border: 3px dashed #0d47a1;
+    }
+
+    .box3 {
+      background-color: #FF5722;
+      border: 3px dotted #bf360c;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Styled Content Boxes</h1>
+
+  <div class="container">
+    <div class="box box1">Box 1 - Solid border with rounded corners.</div>
+    <div class="box box2">Box 2 - Dashed border with rounded corners.</div>
+    <div class="box box3">Box 3 - Dotted border with rounded corners.</div>
+  </div>
+</body>
+</html>
