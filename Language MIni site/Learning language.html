@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Language Learning Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    nav {
+      background: #023e8a;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin: 10px auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .btn {
+      background: #0077b6;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #0096c7;
+    }
+    input {
+      padding: 6px;
+      margin: 5px 0;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌍 Mini Language Learning
+  </header>
+  <nav>
+    <a href="#phrases">Phrases</a>
+    <a href="#practice">Practice</a>
+  </nav>
+
+  <section id="phrases">
+    <h2>Useful Phrases</h2>
+    <div class="card">Hello → Hola</div>
+    <div class="card">Thank you → Gracias</div>
+    <div class="card">Good morning → Buenos días</div>
+    <div class="card">How are you? → ¿Cómo estás?</div>
+    <div class="card">I don’t understand → No entiendo</div>
+  </section>
+
+  <section id="practice">
+    <h2>Practice Quiz</h2>
+    <p><b>Translate this:</b> "Thank you"</p>
+    <input type="text" id="answer" placeholder="Type your answer...">
+    <br>
+    <button class="btn" onclick="checkAnswer()">Check</button>
+    <p id="result"></p>
+  </section>
+
+  <script>
+    function checkAnswer() {
+      let ans = document.getElementById("answer").value.trim().toLowerCase();
+      let result = document.getElementById("result");
+      if (ans === "gracias") {
+        result.textContent = "✅ Correct! Well done.";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ Try again. Hint: It starts with 'G'.";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
