@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Language Mini Site — Page 3: Numbers & Time</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f9fafb;color:#111827}
+    .container{max-width:900px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+    nav a{margin:0 8px;text-decoration:none;color:#4f46e5}
+    h1{margin-top:0;color:#1e293b}
+    .lesson-section{background:#fff;padding:20px;border-radius:10px;margin-bottom:20px;box-shadow:0 3px 8px rgba(0,0,0,0.06)}
+    .phrase{padding:12px;border:1px solid #e5e7eb;border-radius:8px;margin:8px 0;display:flex;justify-content:space-between}
+    .practice{background:#eef2ff;padding:12px;border-radius:8px;margin-top:10px}
+    .quiz button{margin:5px;padding:8px 12px;border-radius:6px;border:none;cursor:pointer;background:#4f46e5;color:#fff}
+    .result{margin-top:10px;font-weight:bold}
+    footer{margin-top:30px;padding:18px;text-align:center;font-size:0.9rem;color:#6b7280}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>LinguaLab</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Page 1.html">Lesson 1</a>
+        <a href="Page 2.html">Lesson 2</a>
+        <a href="Page 3.html"><strong>Lesson 3</strong></a>
+      </nav>
+    </header>
+
+    <h1>Lesson 3 — Numbers & Time</h1>
+    <p>In this lesson, you’ll learn how to count from 1–5 and tell simple time expressions in different languages.</p>
+
+    <!-- Section 1 -->
+    <div class="lesson-section">
+      <h2>Counting 1–5</h2>
+      <div class="phrase"><span>1, 2, 3, 4, 5</span><span><em>uno, dos, tres, cuatro, cinco</em> (Spanish)</span></div>
+      <div class="phrase"><span>1, 2, 3, 4, 5</span><span><em>un, deux, trois, quatre, cinq</em> (French)</span></div>
+      <div class="phrase"><span>1, 2, 3, 4, 5</span><span><em>ichi, ni, san, yon, go</em> (Japanese)</span></div>
+      <div class="phrase"><span>1, 2, 3, 4, 5</span><span><em>isa, dalawa, tatlo, apat, lima</em> (Filipino)</span></div>
+      <div class="phrase"><span>1, 2, 3, 4, 5</span><span><em>uno, due, tre, quattro, cinque</em> (Italian)</span></div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="lesson-section">
+      <h2>Telling Time</h2>
+      <div class="phrase"><span>What time is it?</span><span><em>¿Qué hora es?</em> (Spanish)</span></div>
+      <div class="phrase"><span>It’s 3 o’clock</span><span><em>Il est trois heures</em> (French)</span></div>
+      <div class="phrase"><span>It’s 7 o’clock</span><span><em>Shichi-ji desu</em> (Japanese)</span></div>
+      <div class="phrase"><span>It’s 12 o’clock</span><span><em>Alas dose</em> (Filipino)</span></div>
+      <div class="phrase"><span>It’s 9 o’clock</span><span><em>Sono le nove</em> (Italian)</span></div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="lesson-section">
+      <h2>Practice Activity</h2>
+      <div class="practice">
+        <p>1. Count 1–5 in Japanese → <strong>ichi, ni, san, yon, go</strong></p>
+        <p>2. Say “It’s 3 o’clock” in French → <strong>Il est trois heures</strong></p>
+        <p>3. Say “What time is it?” in Spanish → <strong>¿Qué hora es?</strong></p>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="lesson-section">
+      <h2>Quick Quiz</h2>
+      <p>How do you say “five” in Filipino?</p>
+      <div class="quiz">
+        <button onclick="checkAnswer(this)" data-correct="false">tres</button>
+        <button onclick="checkAnswer(this)" data-correct="false">go</button>
+        <button onclick="checkAnswer(this)" data-correct="true">lima</button>
+      </div>
+      <div id="quiz-result" class="result"></div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> LinguaLab • Lesson 3: Numbers & Time
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function checkAnswer(btn){
+      const correct = btn.getAttribute('data-correct') === 'true';
+      const result = document.getElementById('quiz-result');
+      if(correct){
+        result.style.color = 'green';
+        result.textContent = '✅ Correct! "Lima" means five in Filipino.';
+      } else {
+        result.style.color = 'crimson';
+        result.textContent = '❌ Not correct. Try again!';
+      }
+    }
+  </script>
+</body>
+</html>
