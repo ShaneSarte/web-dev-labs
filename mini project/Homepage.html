@@ -1,1 +1,178 @@
-<h1>Home Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning Muse Cafe - Home</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf0;
+      color: #973625;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #e7dfdb;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #61322a;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+      color: #2b2b1f;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: hsl(30, 13%, 9%);
+      margin-top: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #f5f5dc;
+      border: 1px solid #d7ccc8;
+      padding: 20px;
+      flex: 1 1 250px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #6f4e37;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #6f4e37;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #4b3621;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #6f4e37;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Morning Muse Cafe</h1>
+    <p>Your daily dose of comfort</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <h1>Welcome to Morning Muse Cafe</h1>
+      <p>We serve freshly brewed coffee, homemade pastries, and good vibes all day long.</p>
+    </section>
+
+    <section class="specialties">
+      <h1>Our Specialties</h1>
+      <div class="cards">
+        <div class="card">
+          <h3>Espresso</h3>
+          <p>Rich and aromatic espresso made from locally roasted beans.</p>
+        </div>
+        <div class="card">
+          <h3>Cappuccino</h3>
+          <p>Creamy cappuccino topped with frothy milk for the perfect balance.</p>
+        </div>
+        <div class="card">
+          <h3>Blueberry Muffins</h3>
+          <p>Freshly baked muffins, sweet and bursting with blueberry goodness.</p>
+        </div>
+        <div class="card">
+          <h3>Avocado Toast</h3>
+          <p>Healthy and delicious avocado toast, perfect for breakfast or brunch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <h1>Why Choose Us</h1>
+      <ul>
+        <li>Locally roasted beans</li>
+        <li>Friendly baristas</li>
+        <li>Cozy environment</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Morning Muse Cafe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
