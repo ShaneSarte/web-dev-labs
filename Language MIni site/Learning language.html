@@ -2,61 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Language Learning </title>
+  <title>Language Learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* General */
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
+    /* Header */
     header {
-      background: #4CAF50;
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
       color: white;
-      padding: 15px;
+      padding: 30px 15px;
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
     nav {
       background: #333;
-      padding: 10px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
+      padding: 12px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      background: #4CAF50;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
     }
+    nav a:hover {
+      background: #66BB6A;
+    }
+
+    /* Section */
     section {
-      padding: 20px;
+      padding: 25px;
+      max-width: 1000px;
+      margin: auto;
     }
-    h2 {
-      color: #333;
+    section h2 {
+      text-align: center;
+      color: #2E7D32;
+      margin-bottom: 20px;
     }
+
+    /* Table */
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 30px;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     th, td {
-      padding: 10px;
+      padding: 12px;
       text-align: center;
     }
     th {
       background: #4CAF50;
       color: white;
     }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    tr:hover {
+      background: #e8f5e9;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2E7D32;
+      color: white;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Language Learning - 100 Words in Each Language</h1>
-    <p>Learn the most common words in different languages!</p>
+    <h1>Language Learning</h1>
+    <p>100 Essential Words in Different Languages</p>
   </header>
 
   <nav>
@@ -64,519 +111,81 @@
     <a href="#spanish">Spanish</a>
     <a href="#french">French</a>
     <a href="#japanese">Japanese</a>
-    <a href="#Mandarin">Mandarin</a>
+    <a href="#mandarin">Mandarin</a>
   </nav>
 
   <!-- English Section -->
   <section id="english">
     <h2>English</h2>
-<table>
-  <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
-  <tr><td>1</td><td>Hello</td><td>Greeting</td></tr>
-  <tr><td>2</td><td>Goodbye</td><td>Farewell</td></tr>
-  <tr><td>3</td><td>Thank you</td><td>Expression of gratitude</td></tr>
-  <tr><td>4</td><td>Please</td><td>Polite request</td></tr>
-  <tr><td>5</td><td>Yes</td><td>Agreement</td></tr>
-  <tr><td>6</td><td>No</td><td>Disagreement</td></tr>
-  <tr><td>7</td><td>Sorry</td><td>Apology</td></tr>
-  <tr><td>8</td><td>Excuse me</td><td>Polite attention-getting</td></tr>
-  <tr><td>9</td><td>Good morning</td><td>Morning greeting</td></tr>
-  <tr><td>10</td><td>Good night</td><td>Night farewell</td></tr>
-  <tr><td>11</td><td>Friend</td><td>Companion</td></tr>
-  <tr><td>12</td><td>Family</td><td>Relatives</td></tr>
-  <tr><td>13</td><td>Father</td><td>Male parent</td></tr>
-  <tr><td>14</td><td>Mother</td><td>Female parent</td></tr>
-  <tr><td>15</td><td>Brother</td><td>Male sibling</td></tr>
-  <tr><td>16</td><td>Sister</td><td>Female sibling</td></tr>
-  <tr><td>17</td><td>Child</td><td>Young person</td></tr>
-  <tr><td>18</td><td>Man</td><td>Adult male</td></tr>
-  <tr><td>19</td><td>Woman</td><td>Adult female</td></tr>
-  <tr><td>20</td><td>Baby</td><td>Infant</td></tr>
-  <tr><td>21</td><td>Food</td><td>What we eat</td></tr>
-  <tr><td>22</td><td>Water</td><td>Essential drink</td></tr>
-  <tr><td>23</td><td>Bread</td><td>Staple food</td></tr>
-  <tr><td>24</td><td>Rice</td><td>Grain food</td></tr>
-  <tr><td>25</td><td>Fruit</td><td>Sweet plant food</td></tr>
-  <tr><td>26</td><td>Vegetable</td><td>Edible plant</td></tr>
-  <tr><td>27</td><td>Meat</td><td>Animal food</td></tr>
-  <tr><td>28</td><td>Fish</td><td>Seafood</td></tr>
-  <tr><td>29</td><td>Milk</td><td>Drink from animals</td></tr>
-  <tr><td>30</td><td>Egg</td><td>Food from birds</td></tr>
-  <tr><td>31</td><td>House</td><td>Place to live</td></tr>
-  <tr><td>32</td><td>School</td><td>Place to learn</td></tr>
-  <tr><td>33</td><td>Teacher</td><td>One who teaches</td></tr>
-  <tr><td>34</td><td>Student</td><td>Learner</td></tr>
-  <tr><td>35</td><td>Book</td><td>Reading material</td></tr>
-  <tr><td>36</td><td>Pen</td><td>Writing tool</td></tr>
-  <tr><td>37</td><td>Pencil</td><td>Writing tool</td></tr>
-  <tr><td>38</td><td>Paper</td><td>Writing surface</td></tr>
-  <tr><td>39</td><td>Bag</td><td>Container for things</td></tr>
-  <tr><td>40</td><td>Chair</td><td>Seat</td></tr>
-  <tr><td>41</td><td>Table</td><td>Flat surface furniture</td></tr>
-  <tr><td>42</td><td>Car</td><td>Vehicle</td></tr>
-  <tr><td>43</td><td>Bus</td><td>Public transport</td></tr>
-  <tr><td>44</td><td>Train</td><td>Rail transport</td></tr>
-  <tr><td>45</td><td>Airplane</td><td>Flying vehicle</td></tr>
-  <tr><td>46</td><td>Boat</td><td>Water vehicle</td></tr>
-  <tr><td>47</td><td>Street</td><td>Road</td></tr>
-  <tr><td>48</td><td>City</td><td>Large town</td></tr>
-  <tr><td>49</td><td>Village</td><td>Small community</td></tr>
-  <tr><td>50</td><td>Country</td><td>Nation</td></tr>
-  <tr><td>51</td><td>Day</td><td>24 hours</td></tr>
-  <tr><td>52</td><td>Night</td><td>Dark time</td></tr>
-  <tr><td>53</td><td>Morning</td><td>Start of day</td></tr>
-  <tr><td>54</td><td>Afternoon</td><td>Middle of day</td></tr>
-  <tr><td>55</td><td>Evening</td><td>End of day</td></tr>
-  <tr><td>56</td><td>Sun</td><td>Star of our system</td></tr>
-  <tr><td>57</td><td>Moon</td><td>Earth’s satellite</td></tr>
-  <tr><td>58</td><td>Star</td><td>Shining body in space</td></tr>
-  <tr><td>59</td><td>Sky</td><td>Above us</td></tr>
-  <tr><td>60</td><td>Cloud</td><td>Water vapor</td></tr>
-  <tr><td>61</td><td>Rain</td><td>Water from sky</td></tr>
-  <tr><td>62</td><td>Snow</td><td>Frozen water</td></tr>
-  <tr><td>63</td><td>Wind</td><td>Moving air</td></tr>
-  <tr><td>64</td><td>Fire</td><td>Burning flame</td></tr>
-  <tr><td>65</td><td>Earth</td><td>Our planet</td></tr>
-  <tr><td>66</td><td>Land</td><td>Ground</td></tr>
-  <tr><td>67</td><td>Sea</td><td>Large water body</td></tr>
-  <tr><td>68</td><td>River</td><td>Flowing water</td></tr>
-  <tr><td>69</td><td>Mountain</td><td>High land</td></tr>
-  <tr><td>70</td><td>Tree</td><td>Large plant</td></tr>
-  <tr><td>71</td><td>Flower</td><td>Blooming plant</td></tr>
-  <tr><td>72</td><td>Grass</td><td>Small green plant</td></tr>
-  <tr><td>73</td><td>Animal</td><td>Living creature</td></tr>
-  <tr><td>74</td><td>Dog</td><td>Pet animal</td></tr>
-  <tr><td>75</td><td>Cat</td><td>Pet animal</td></tr>
-  <tr><td>76</td><td>Bird</td><td>Flying animal</td></tr>
-  <tr><td>77</td><td>Fish</td><td>Water animal</td></tr>
-  <tr><td>78</td><td>Horse</td><td>Riding animal</td></tr>
-  <tr><td>79</td><td>Cow</td><td>Farm animal</td></tr>
-  <tr><td>80</td><td>Sheep</td><td>Wool animal</td></tr>
-  <tr><td>81</td><td>Love</td><td>Strong affection</td></tr>
-  <tr><td>82</td><td>Happy</td><td>Feeling good</td></tr>
-  <tr><td>83</td><td>Sad</td><td>Feeling bad</td></tr>
-  <tr><td>84</td><td>Angry</td><td>Feeling mad</td></tr>
-  <tr><td>85</td><td>Fear</td><td>Feeling afraid</td></tr>
-  <tr><td>86</td><td>Laugh</td><td>Show happiness</td></tr>
-  <tr><td>87</td><td>Cry</td><td>Show sadness</td></tr>
-  <tr><td>88</td><td>Work</td><td>Do a job</td></tr>
-  <tr><td>89</td><td>Play</td><td>Do for fun</td></tr>
-  <tr><td>90</td><td>Run</td><td>Move fast</td></tr>
-  <tr><td>91</td><td>Walk</td><td>Move on foot</td></tr>
-  <tr><td>92</td><td>Eat</td><td>Consume food</td></tr>
-  <tr><td>93</td><td>Drink</td><td>Consume liquid</td></tr>
-  <tr><td>94</td><td>Sleep</td><td>Rest</td></tr>
-  <tr><td>95</td><td>Wake up</td><td>Stop sleeping</td></tr>
-  <tr><td>96</td><td>See</td><td>Use eyes</td></tr>
-  <tr><td>97</td><td>Hear</td><td>Use ears</td></tr>
-  <tr><td>98</td><td>Speak</td><td>Use words</td></tr>
-  <tr><td>99</td><td>Write</td><td>Make words</td></tr>
-  <tr><td>100</td><td>Read</td><td>Understand written words</td></tr>
-</table>
-</section>
-      <!-- Continue until 100 words --
+    <table>
+      <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
+      <tr><td>1</td><td>Hello</td><td>Greeting</td></tr>
+      <tr><td>2</td><td>Goodbye</td><td>Farewell</td></tr>
+      <tr><td>3</td><td>Thank you</td><td>Gratitude</td></tr>
+      <tr><td>4</td><td>Please</td><td>Polite request</td></tr>
+      <tr><td>5</td><td>Yes</td><td>Agreement</td></tr>
+      <tr><td>6</td><td>No</td><td>Disagreement</td></tr>
+    </table>
   </section>
 
   <!-- Spanish Section -->
   <section id="spanish">
     <h2>Spanish</h2>
-<table>
-  <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
-  <tr><td>1</td><td>Hola</td><td>Hello</td></tr>
-  <tr><td>2</td><td>Adiós</td><td>Goodbye</td></tr>
-  <tr><td>3</td><td>Gracias</td><td>Thank you</td></tr>
-  <tr><td>4</td><td>Por favor</td><td>Please</td></tr>
-  <tr><td>5</td><td>Sí</td><td>Yes</td></tr>
-  <tr><td>6</td><td>No</td><td>No</td></tr>
-  <tr><td>7</td><td>Perdón</td><td>Sorry</td></tr>
-  <tr><td>8</td><td>Disculpe</td><td>Excuse me</td></tr>
-  <tr><td>9</td><td>Buenos días</td><td>Good morning</td></tr>
-  <tr><td>10</td><td>Buenas noches</td><td>Good night</td></tr>
-  <tr><td>11</td><td>Amigo</td><td>Friend</td></tr>
-  <tr><td>12</td><td>Familia</td><td>Family</td></tr>
-  <tr><td>13</td><td>Padre</td><td>Father</td></tr>
-  <tr><td>14</td><td>Madre</td><td>Mother</td></tr>
-  <tr><td>15</td><td>Hermano</td><td>Brother</td></tr>
-  <tr><td>16</td><td>Hermana</td><td>Sister</td></tr>
-  <tr><td>17</td><td>Niño</td><td>Child (boy)</td></tr>
-  <tr><td>18</td><td>Niña</td><td>Child (girl)</td></tr>
-  <tr><td>19</td><td>Hombre</td><td>Man</td></tr>
-  <tr><td>20</td><td>Mujer</td><td>Woman</td></tr>
-  <tr><td>21</td><td>Bebé</td><td>Baby</td></tr>
-  <tr><td>22</td><td>Comida</td><td>Food</td></tr>
-  <tr><td>23</td><td>Agua</td><td>Water</td></tr>
-  <tr><td>24</td><td>Pan</td><td>Bread</td></tr>
-  <tr><td>25</td><td>Arroz</td><td>Rice</td></tr>
-  <tr><td>26</td><td>Fruta</td><td>Fruit</td></tr>
-  <tr><td>27</td><td>Verdura</td><td>Vegetable</td></tr>
-  <tr><td>28</td><td>Carne</td><td>Meat</td></tr>
-  <tr><td>29</td><td>Pescado</td><td>Fish</td></tr>
-  <tr><td>30</td><td>Leche</td><td>Milk</td></tr>
-  <tr><td>31</td><td>Huevo</td><td>Egg</td></tr>
-  <tr><td>32</td><td>Casa</td><td>House</td></tr>
-  <tr><td>33</td><td>Escuela</td><td>School</td></tr>
-  <tr><td>34</td><td>Maestro</td><td>Teacher (male)</td></tr>
-  <tr><td>35</td><td>Maestra</td><td>Teacher (female)</td></tr>
-  <tr><td>36</td><td>Estudiante</td><td>Student</td></tr>
-  <tr><td>37</td><td>Libro</td><td>Book</td></tr>
-  <tr><td>38</td><td>Pluma</td><td>Pen</td></tr>
-  <tr><td>39</td><td>Lápiz</td><td>Pencil</td></tr>
-  <tr><td>40</td><td>Papel</td><td>Paper</td></tr>
-  <tr><td>41</td><td>Bolsa</td><td>Bag</td></tr>
-  <tr><td>42</td><td>Silla</td><td>Chair</td></tr>
-  <tr><td>43</td><td>Mesa</td><td>Table</td></tr>
-  <tr><td>44</td><td>Coche</td><td>Car</td></tr>
-  <tr><td>45</td><td>Autobús</td><td>Bus</td></tr>
-  <tr><td>46</td><td>Tren</td><td>Train</td></tr>
-  <tr><td>47</td><td>Avión</td><td>Airplane</td></tr>
-  <tr><td>48</td><td>Barco</td><td>Boat</td></tr>
-  <tr><td>49</td><td>Calle</td><td>Street</td></tr>
-  <tr><td>50</td><td>Ciudad</td><td>City</td></tr>
-  <tr><td>51</td><td>Pueblo</td><td>Village</td></tr>
-  <tr><td>52</td><td>País</td><td>Country</td></tr>
-  <tr><td>53</td><td>Día</td><td>Day</td></tr>
-  <tr><td>54</td><td>Noche</td><td>Night</td></tr>
-  <tr><td>55</td><td>Mañana</td><td>Morning/Tomorrow</td></tr>
-  <tr><td>56</td><td>Tarde</td><td>Afternoon</td></tr>
-  <tr><td>57</td><td>Atardecer</td><td>Evening</td></tr>
-  <tr><td>58</td><td>Sol</td><td>Sun</td></tr>
-  <tr><td>59</td><td>Luna</td><td>Moon</td></tr>
-  <tr><td>60</td><td>Estrella</td><td>Star</td></tr>
-  <tr><td>61</td><td>Cielo</td><td>Sky</td></tr>
-  <tr><td>62</td><td>Nube</td><td>Cloud</td></tr>
-  <tr><td>63</td><td>Lluvia</td><td>Rain</td></tr>
-  <tr><td>64</td><td>Nieve</td><td>Snow</td></tr>
-  <tr><td>65</td><td>Viento</td><td>Wind</td></tr>
-  <tr><td>66</td><td>Fuego</td><td>Fire</td></tr>
-  <tr><td>67</td><td>Tierra</td><td>Earth</td></tr>
-  <tr><td>68</td><td>Campo</td><td>Field</td></tr>
-  <tr><td>69</td><td>Mar</td><td>Sea</td></tr>
-  <tr><td>70</td><td>Río</td><td>River</td></tr>
-  <tr><td>71</td><td>Montaña</td><td>Mountain</td></tr>
-  <tr><td>72</td><td>Árbol</td><td>Tree</td></tr>
-  <tr><td>73</td><td>Flor</td><td>Flower</td></tr>
-  <tr><td>74</td><td>Pasto</td><td>Grass</td></tr>
-  <tr><td>75</td><td>Animal</td><td>Animal</td></tr>
-  <tr><td>76</td><td>Perro</td><td>Dog</td></tr>
-  <tr><td>77</td><td>Gato</td><td>Cat</td></tr>
-  <tr><td>78</td><td>Pájaro</td><td>Bird</td></tr>
-  <tr><td>79</td><td>Pez</td><td>Fish (alive)</td></tr>
-  <tr><td>80</td><td>Caballo</td><td>Horse</td></tr>
-  <tr><td>81</td><td>Vaca</td><td>Cow</td></tr>
-  <tr><td>82</td><td>Oveja</td><td>Sheep</td></tr>
-  <tr><td>83</td><td>Amor</td><td>Love</td></tr>
-  <tr><td>84</td><td>Feliz</td><td>Happy</td></tr>
-  <tr><td>85</td><td>Triste</td><td>Sad</td></tr>
-  <tr><td>86</td><td>Enojado</td><td>Angry</td></tr>
-  <tr><td>87</td><td>Miedo</td><td>Fear</td></tr>
-  <tr><td>88</td><td>Reír</td><td>To laugh</td></tr>
-  <tr><td>89</td><td>Llorar</td><td>To cry</td></tr>
-  <tr><td>90</td><td>Trabajo</td><td>Work</td></tr>
-  <tr><td>91</td><td>Jugar</td><td>To play</td></tr>
-  <tr><td>92</td><td>Correr</td><td>To run</td></tr>
-  <tr><td>93</td><td>Caminar</td><td>To walk</td></tr>
-  <tr><td>94</td><td>Comer</td><td>To eat</td></tr>
-  <tr><td>95</td><td>Beber</td><td>To drink</td></tr>
-  <tr><td>96</td><td>Dormir</td><td>To sleep</td></tr>
-  <tr><td>97</td><td>Despertar</td><td>To wake up</td></tr>
-  <tr><td>98</td><td>Ver</td><td>To see</td></tr>
-  <tr><td>99</td><td>Oír</td><td>To hear</td></tr>
-  <tr><td>100</td><td>Hablar</td><td>To speak</td></tr>
-</table>
-
+    <table>
+      <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
+      <tr><td>1</td><td>Hola</td><td>Hello</td></tr>
+      <tr><td>2</td><td>Adiós</td><td>Goodbye</td></tr>
+      <tr><td>3</td><td>Gracias</td><td>Thank you</td></tr>
+      <tr><td>4</td><td>Por favor</td><td>Please</td></tr>
+      <tr><td>5</td><td>Sí</td><td>Yes</td></tr>
+      <tr><td>6</td><td>No</td><td>No</td></tr>
+    </table>
   </section>
 
   <!-- French Section -->
   <section id="french">
     <h2>French</h2>
-<table>
-  <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
-  <tr><td>1</td><td>Bonjour</td><td>Hello</td></tr>
-  <tr><td>2</td><td>Au revoir</td><td>Goodbye</td></tr>
-  <tr><td>3</td><td>Merci</td><td>Thank you</td></tr>
-  <tr><td>4</td><td>S'il vous plaît</td><td>Please</td></tr>
-  <tr><td>5</td><td>Oui</td><td>Yes</td></tr>
-  <tr><td>6</td><td>Non</td><td>No</td></tr>
-  <tr><td>7</td><td>Pardon</td><td>Sorry</td></tr>
-  <tr><td>8</td><td>Excusez-moi</td><td>Excuse me</td></tr>
-  <tr><td>9</td><td>Bon matin</td><td>Good morning</td></tr>
-  <tr><td>10</td><td>Bonne nuit</td><td>Good night</td></tr>
-  <tr><td>11</td><td>Ami</td><td>Friend (male)</td></tr>
-  <tr><td>12</td><td>Amie</td><td>Friend (female)</td></tr>
-  <tr><td>13</td><td>Famille</td><td>Family</td></tr>
-  <tr><td>14</td><td>Père</td><td>Father</td></tr>
-  <tr><td>15</td><td>Mère</td><td>Mother</td></tr>
-  <tr><td>16</td><td>Frère</td><td>Brother</td></tr>
-  <tr><td>17</td><td>Sœur</td><td>Sister</td></tr>
-  <tr><td>18</td><td>Enfant</td><td>Child</td></tr>
-  <tr><td>19</td><td>Homme</td><td>Man</td></tr>
-  <tr><td>20</td><td>Femme</td><td>Woman</td></tr>
-  <tr><td>21</td><td>Bébé</td><td>Baby</td></tr>
-  <tr><td>22</td><td>Nourriture</td><td>Food</td></tr>
-  <tr><td>23</td><td>Eau</td><td>Water</td></tr>
-  <tr><td>24</td><td>Pain</td><td>Bread</td></tr>
-  <tr><td>25</td><td>Riz</td><td>Rice</td></tr>
-  <tr><td>26</td><td>Fruit</td><td>Fruit</td></tr>
-  <tr><td>27</td><td>Légume</td><td>Vegetable</td></tr>
-  <tr><td>28</td><td>Viande</td><td>Meat</td></tr>
-  <tr><td>29</td><td>Poisson</td><td>Fish</td></tr>
-  <tr><td>30</td><td>Lait</td><td>Milk</td></tr>
-  <tr><td>31</td><td>Œuf</td><td>Egg</td></tr>
-  <tr><td>32</td><td>Maison</td><td>House</td></tr>
-  <tr><td>33</td><td>École</td><td>School</td></tr>
-  <tr><td>34</td><td>Professeur</td><td>Teacher</td></tr>
-  <tr><td>35</td><td>Étudiant</td><td>Student</td></tr>
-  <tr><td>36</td><td>Livre</td><td>Book</td></tr>
-  <tr><td>37</td><td>Stylo</td><td>Pen</td></tr>
-  <tr><td>38</td><td>Crayon</td><td>Pencil</td></tr>
-  <tr><td>39</td><td>Papier</td><td>Paper</td></tr>
-  <tr><td>40</td><td>Sac</td><td>Bag</td></tr>
-  <tr><td>41</td><td>Chaise</td><td>Chair</td></tr>
-  <tr><td>42</td><td>Table</td><td>Table</td></tr>
-  <tr><td>43</td><td>Voiture</td><td>Car</td></tr>
-  <tr><td>44</td><td>Bus</td><td>Bus</td></tr>
-  <tr><td>45</td><td>Train</td><td>Train</td></tr>
-  <tr><td>46</td><td>Avion</td><td>Airplane</td></tr>
-  <tr><td>47</td><td>Bateau</td><td>Boat</td></tr>
-  <tr><td>48</td><td>Rue</td><td>Street</td></tr>
-  <tr><td>49</td><td>Ville</td><td>City</td></tr>
-  <tr><td>50</td><td>Village</td><td>Village</td></tr>
-  <tr><td>51</td><td>Pays</td><td>Country</td></tr>
-  <tr><td>52</td><td>Jour</td><td>Day</td></tr>
-  <tr><td>53</td><td>Nuit</td><td>Night</td></tr>
-  <tr><td>54</td><td>Matin</td><td>Morning</td></tr>
-  <tr><td>55</td><td>Après-midi</td><td>Afternoon</td></tr>
-  <tr><td>56</td><td>Soir</td><td>Evening</td></tr>
-  <tr><td>57</td><td>Soleil</td><td>Sun</td></tr>
-  <tr><td>58</td><td>Lune</td><td>Moon</td></tr>
-  <tr><td>59</td><td>Étoile</td><td>Star</td></tr>
-  <tr><td>60</td><td>Ciel</td><td>Sky</td></tr>
-  <tr><td>61</td><td>Nuage</td><td>Cloud</td></tr>
-  <tr><td>62</td><td>Pluie</td><td>Rain</td></tr>
-  <tr><td>63</td><td>Neige</td><td>Snow</td></tr>
-  <tr><td>64</td><td>Vent</td><td>Wind</td></tr>
-  <tr><td>65</td><td>Feu</td><td>Fire</td></tr>
-  <tr><td>66</td><td>Terre</td><td>Earth</td></tr>
-  <tr><td>67</td><td>Champ</td><td>Field</td></tr>
-  <tr><td>68</td><td>Mer</td><td>Sea</td></tr>
-  <tr><td>69</td><td>Rivière</td><td>River</td></tr>
-  <tr><td>70</td><td>Montagne</td><td>Mountain</td></tr>
-  <tr><td>71</td><td>Arbre</td><td>Tree</td></tr>
-  <tr><td>72</td><td>Fleur</td><td>Flower</td></tr>
-  <tr><td>73</td><td>Herbe</td><td>Grass</td></tr>
-  <tr><td>74</td><td>Animal</td><td>Animal</td></tr>
-  <tr><td>75</td><td>Chien</td><td>Dog</td></tr>
-  <tr><td>76</td><td>Chat</td><td>Cat</td></tr>
-  <tr><td>77</td><td>Oiseau</td><td>Bird</td></tr>
-  <tr><td>78</td><td>Poisson</td><td>Fish</td></tr>
-  <tr><td>79</td><td>Cheval</td><td>Horse</td></tr>
-  <tr><td>80</td><td>Vache</td><td>Cow</td></tr>
-  <tr><td>81</td><td>Mouton</td><td>Sheep</td></tr>
-  <tr><td>82</td><td>Amour</td><td>Love</td></tr>
-  <tr><td>83</td><td>Heureux</td><td>Happy</td></tr>
-  <tr><td>84</td><td>Triste</td><td>Sad</td></tr>
-  <tr><td>85</td><td>Fâché</td><td>Angry</td></tr>
-  <tr><td>86</td><td>Peur</td><td>Fear</td></tr>
-  <tr><td>87</td><td>Rire</td><td>To laugh</td></tr>
-  <tr><td>88</td><td>Pleurer</td><td>To cry</td></tr>
-  <tr><td>89</td><td>Travail</td><td>Work</td></tr>
-  <tr><td>90</td><td>Jouer</td><td>To play</td></tr>
-  <tr><td>91</td><td>Courir</td><td>To run</td></tr>
-  <tr><td>92</td><td>Marcher</td><td>To walk</td></tr>
-  <tr><td>93</td><td>Manger</td><td>To eat</td></tr>
-  <tr><td>94</td><td>Boire</td><td>To drink</td></tr>
-  <tr><td>95</td><td>Dormir</td><td>To sleep</td></tr>
-  <tr><td>96</td><td>Se réveiller</td><td>To wake up</td></tr>
-  <tr><td>97</td><td>Voir</td><td>To see</td></tr>
-  <tr><td>98</td><td>Entendre</td><td>To hear</td></tr>
-  <tr><td>99</td><td>Parler</td><td>To speak</td></tr>
-  <tr><td>100</td><td>Lire</td><td>To read</td></tr>
-</table>
-
+    <table>
+      <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
+      <tr><td>1</td><td>Bonjour</td><td>Hello</td></tr>
+      <tr><td>2</td><td>Au revoir</td><td>Goodbye</td></tr>
+      <tr><td>3</td><td>Merci</td><td>Thank you</td></tr>
+      <tr><td>4</td><td>S’il vous plaît</td><td>Please</td></tr>
+      <tr><td>5</td><td>Oui</td><td>Yes</td></tr>
+      <tr><td>6</td><td>Non</td><td>No</td></tr>
+    </table>
   </section>
 
   <!-- Japanese Section -->
   <section id="japanese">
     <h2>Japanese</h2>
-<table>
-  <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
-  <tr><td>1</td><td>こんにちは (Konnichiwa)</td><td>Hello</td></tr>
-  <tr><td>2</td><td>さようなら (Sayounara)</td><td>Goodbye</td></tr>
-  <tr><td>3</td><td>ありがとう (Arigatou)</td><td>Thank you</td></tr>
-  <tr><td>4</td><td>お願いします (Onegaishimasu)</td><td>Please</td></tr>
-  <tr><td>5</td><td>はい (Hai)</td><td>Yes</td></tr>
-  <tr><td>6</td><td>いいえ (Iie)</td><td>No</td></tr>
-  <tr><td>7</td><td>ごめんなさい (Gomen nasai)</td><td>Sorry</td></tr>
-  <tr><td>8</td><td>おはよう (Ohayou)</td><td>Good morning</td></tr>
-  <tr><td>9</td><td>おやすみ (Oyasumi)</td><td>Good night</td></tr>
-  <tr><td>10</td><td>ともだち (Tomodachi)</td><td>Friend</td></tr>
-  <tr><td>11</td><td>かぞく (Kazoku)</td><td>Family</td></tr>
-  <tr><td>12</td><td>ちち (Chichi)</td><td>Father</td></tr>
-  <tr><td>13</td><td>はは (Haha)</td><td>Mother</td></tr>
-  <tr><td>14</td><td>おにいさん (Onii-san)</td><td>Older brother</td></tr>
-  <tr><td>15</td><td>おねえさん (Onee-san)</td><td>Older sister</td></tr>
-  <tr><td>16</td><td>おとこのひと (Otoko no hito)</td><td>Man</td></tr>
-  <tr><td>17</td><td>おんなのひと (Onna no hito)</td><td>Woman</td></tr>
-  <tr><td>18</td><td>こども (Kodomo)</td><td>Child</td></tr>
-  <tr><td>19</td><td>あかちゃん (Akachan)</td><td>Baby</td></tr>
-  <tr><td>20</td><td>いぬ (Inu)</td><td>Dog</td></tr>
-  <tr><td>21</td><td>ねこ (Neko)</td><td>Cat</td></tr>
-  <tr><td>22</td><td>とり (Tori)</td><td>Bird</td></tr>
-  <tr><td>23</td><td>うみ (Umi)</td><td>Sea</td></tr>
-  <tr><td>24</td><td>やま (Yama)</td><td>Mountain</td></tr>
-  <tr><td>25</td><td>かわ (Kawa)</td><td>River</td></tr>
-  <tr><td>26</td><td>みず (Mizu)</td><td>Water</td></tr>
-  <tr><td>27</td><td>ひ (Hi)</td><td>Fire</td></tr>
-  <tr><td>28</td><td>つき (Tsuki)</td><td>Moon</td></tr>
-  <tr><td>29</td><td>たいよう (Taiyou)</td><td>Sun</td></tr>
-  <tr><td>30</td><td>ほし (Hoshi)</td><td>Star</td></tr>
-  <tr><td>31</td><td>あめ (Ame)</td><td>Rain</td></tr>
-  <tr><td>32</td><td>ゆき (Yuki)</td><td>Snow</td></tr>
-  <tr><td>33</td><td>くも (Kumo)</td><td>Cloud</td></tr>
-  <tr><td>34</td><td>くるま (Kuruma)</td><td>Car</td></tr>
-  <tr><td>35</td><td>でんしゃ (Densha)</td><td>Train</td></tr>
-  <tr><td>36</td><td>ひこうき (Hikouki)</td><td>Airplane</td></tr>
-  <tr><td>37</td><td>ふね (Fune)</td><td>Boat</td></tr>
-  <tr><td>38</td><td>みち (Michi)</td><td>Street</td></tr>
-  <tr><td>39</td><td>まち (Machi)</td><td>Town</td></tr>
-  <tr><td>40</td><td>くに (Kuni)</td><td>Country</td></tr>
-  <tr><td>41</td><td>いえ (Ie)</td><td>House</td></tr>
-  <tr><td>42</td><td>がっこう (Gakkou)</td><td>School</td></tr>
-  <tr><td>43</td><td>せんせい (Sensei)</td><td>Teacher</td></tr>
-  <tr><td>44</td><td>がくせい (Gakusei)</td><td>Student</td></tr>
-  <tr><td>45</td><td>ほん (Hon)</td><td>Book</td></tr>
-  <tr><td>46</td><td>えんぴつ (Enpitsu)</td><td>Pencil</td></tr>
-  <tr><td>47</td><td>ペン (Pen)</td><td>Pen</td></tr>
-  <tr><td>48</td><td>かみ (Kami)</td><td>Paper</td></tr>
-  <tr><td>49</td><td>つくえ (Tsukue)</td><td>Desk</td></tr>
-  <tr><td>50</td><td>いす (Isu)</td><td>Chair</td></tr>
-  <tr><td>51</td><td>て (Te)</td><td>Hand</td></tr>
-  <tr><td>52</td><td>あし (Ashi)</td><td>Foot/Leg</td></tr>
-  <tr><td>53</td><td>め (Me)</td><td>Eye</td></tr>
-  <tr><td>54</td><td>みみ (Mimi)</td><td>Ear</td></tr>
-  <tr><td>55</td><td>くち (Kuchi)</td><td>Mouth</td></tr>
-  <tr><td>56</td><td>はな (Hana)</td><td>Nose</td></tr>
-  <tr><td>57</td><td>かお (Kao)</td><td>Face</td></tr>
-  <tr><td>58</td><td>あたま (Atama)</td><td>Head</td></tr>
-  <tr><td>59</td><td>からだ (Karada)</td><td>Body</td></tr>
-  <tr><td>60</td><td>こころ (Kokoro)</td><td>Heart/Mind</td></tr>
-  <tr><td>61</td><td>すき (Suki)</td><td>Like</td></tr>
-  <tr><td>62</td><td>きらい (Kirai)</td><td>Dislike</td></tr>
-  <tr><td>63</td><td>あい (Ai)</td><td>Love</td></tr>
-  <tr><td>64</td><td>しあわせ (Shiawase)</td><td>Happiness</td></tr>
-  <tr><td>65</td><td>かなしい (Kanashii)</td><td>Sad<
-/td></tr>
-  <tr><td>66</td><td>おこる (Okoru)</
+    <table>
+      <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
+      <tr><td>1</td><td>こんにちは (Konnichiwa)</td><td>Hello</td></tr>
+      <tr><td>2</td><td>さようなら (Sayounara)</td><td>Goodbye</td></tr>
+      <tr><td>3</td><td>ありがとう (Arigatou)</td><td>Thank you</td></tr>
+      <tr><td>4</td><td>お願いします (Onegaishimasu)</td><td>Please</td></tr>
+      <tr><td>5</td><td>はい (Hai)</td><td>Yes</td></tr>
+      <tr><td>6</td><td>いいえ (Iie)</td><td>No</td></tr>
+    </table>
   </section>
 
-  <!-- Filipino Section -->
-  <section id="Mandarin">
+  <!-- Mandarin Section -->
+  <section id="mandarin">
     <h2>Mandarin</h2>
-<table>
-  <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
-  <tr><td>1</td><td>你好 (Nǐ hǎo)</td><td>Hello</td></tr>
-  <tr><td>2</td><td>再见 (Zàijiàn)</td><td>Goodbye</td></tr>
-  <tr><td>3</td><td>谢谢 (Xièxiè)</td><td>Thank you</td></tr>
-  <tr><td>4</td><td>请 (Qǐng)</td><td>Please</td></tr>
-  <tr><td>5</td><td>是 (Shì)</td><td>Yes/To be</td></tr>
-  <tr><td>6</td><td>不是 (Bù shì)</td><td>No/Not</td></tr>
-  <tr><td>7</td><td>对不起 (Duìbùqǐ)</td><td>Sorry</td></tr>
-  <tr><td>8</td><td>没关系 (Méi guānxi)</td><td>It's okay</td></tr>
-  <tr><td>9</td><td>早上好 (Zǎoshang hǎo)</td><td>Good morning</td></tr>
-  <tr><td>10</td><td>晚安 (Wǎn'ān)</td><td>Good night</td></tr>
-  <tr><td>11</td><td>朋友 (Péngyǒu)</td><td>Friend</td></tr>
-  <tr><td>12</td><td>家 (Jiā)</td><td>Home/Family</td></tr>
-  <tr><td>13</td><td>爸爸 (Bàba)</td><td>Father</td></tr>
-  <tr><td>14</td><td>妈妈 (Māma)</td><td>Mother</td></tr>
-  <tr><td>15</td><td>哥哥 (Gēge)</td><td>Older brother</td></tr>
-  <tr><td>16</td><td>姐姐 (Jiějie)</td><td>Older sister</td></tr>
-  <tr><td>17</td><td>弟弟 (Dìdi)</td><td>Younger brother</td></tr>
-  <tr><td>18</td><td>妹妹 (Mèimei)</td><td>Younger sister</td></tr>
-  <tr><td>19</td><td>男人 (Nánrén)</td><td>Man</td></tr>
-  <tr><td>20</td><td>女人 (Nǚrén)</td><td>Woman</td></tr>
-  <tr><td>21</td><td>孩子 (Háizi)</td><td>Child</td></tr>
-  <tr><td>22</td><td>婴儿 (Yīng'ér)</td><td>Baby</td></tr>
-  <tr><td>23</td><td>狗 (Gǒu)</td><td>Dog</td></tr>
-  <tr><td>24</td><td>猫 (Māo)</td><td>Cat</td></tr>
-  <tr><td>25</td><td>鸟 (Niǎo)</td><td>Bird</td></tr>
-  <tr><td>26</td><td>鱼 (Yú)</td><td>Fish</td></tr>
-  <tr><td>27</td><td>水 (Shuǐ)</td><td>Water</td></tr>
-  <tr><td>28</td><td>火 (Huǒ)</td><td>Fire</td></tr>
-  <tr><td>29</td><td>太阳 (Tàiyáng)</td><td>Sun</td></tr>
-  <tr><td>30</td><td>月亮 (Yuèliàng)</td><td>Moon</td></tr>
-  <tr><td>31</td><td>星星 (Xīngxing)</td><td>Star</td></tr>
-  <tr><td>32</td><td>山 (Shān)</td><td>Mountain</td></tr>
-  <tr><td>33</td><td>河 (Hé)</td><td>River</td></tr>
-  <tr><td>34</td><td>海 (Hǎi)</td><td>Sea</td></tr>
-  <tr><td>35</td><td>天 (Tiān)</td><td>Sky</td></tr>
-  <tr><td>36</td><td>云 (Yún)</td><td>Cloud</td></tr>
-  <tr><td>37</td><td>雨 (Yǔ)</td><td>Rain</td></tr>
-  <tr><td>38</td><td>雪 (Xuě)</td><td>Snow</td></tr>
-  <tr><td>39</td><td>风 (Fēng)</td><td>Wind</td></tr>
-  <tr><td>40</td><td>树 (Shù)</td><td>Tree</td></tr>
-  <tr><td>41</td><td>花 (Huā)</td><td>Flower</td></tr>
-  <tr><td>42</td><td>草 (Cǎo)</td><td>Grass</td></tr>
-  <tr><td>43</td><td>水果 (Shuǐguǒ)</td><td>Fruit</td></tr>
-  <tr><td>44</td><td>蔬菜 (Shūcài)</td><td>Vegetable</td></tr>
-  <tr><td>45</td><td>米饭 (Mǐfàn)</td><td>Rice</td></tr>
-  <tr><td>46</td><td>面包 (Miànbāo)</td><td>Bread</td></tr>
-  <tr><td>47</td><td>肉 (Ròu)</td><td>Meat</td></tr>
-  <tr><td>48</td><td>鸡蛋 (Jīdàn)</td><td>Egg</td></tr>
-  <tr><td>49</td><td>牛奶 (Niúnǎi)</td><td>Milk</td></tr>
-  <tr><td>50</td><td>茶 (Chá)</td><td>Tea</td></tr>
-  <tr><td>51</td><td>咖啡 (Kāfēi)</td><td>Coffee</td></tr>
-  <tr><td>52</td><td>房子 (Fángzi)</td><td>House</td></tr>
-  <tr><td>53</td><td>学校 (Xuéxiào)</td><td>School</td></tr>
-  <tr><td>54</td><td>老师 (Lǎoshī)</td><td>Teacher</td></tr>
-  <tr><td>55</td><td>学生 (Xuéshēng)</td><td>Student</td></tr>
-  <tr><td>56</td><td>书 (Shū)</td><td>Book</td></tr>
-  <tr><td>57</td><td>笔 (Bǐ)</td><td>Pen</td></tr>
-  <tr><td>58</td><td>纸 (Zhǐ)</td><td>Paper</td></tr>
-  <tr><td>59</td><td>桌子 (Zhuōzi)</td><td>Table</td></tr>
-  <tr><td>60</td><td>椅子 (Yǐzi)</td><td>Chair</td></tr>
-  <tr><td>61</td><td>车 (Chē)</td><td>Car</td></tr>
-  <tr><td>62</td><td>火车 (Huǒchē)</td><td>Train</td></tr>
-  <tr><td>63</td><td>飞机 (Fēijī)</td><td>Airplane</td></tr>
-  <tr><td>64</td><td>船 (Chuán)</td><td>Boat</td></tr>
-  <tr><td>65</td><td>路 (Lù)</td><td>Road</td></tr>
-  <tr><td>66</td><td>城市 (Chéngshì)</td><td>City</td></tr>
-  <tr><td>67</td><td>国家 (Guójiā)</td><td>Country</td></tr>
-  <tr><td>68</td><td>今天 (Jīntiān)</td><td>Today</td></tr>
-  <tr><td>69</td><td>明天 (Míngtiān)</td><td>Tomorrow</td></tr>
-  <tr><td>70</td><td>昨天 (Zuótiān)</td><td>Yesterday</td></tr>
-  <tr><td>71</td><td>早上 (Zǎoshang)</td><td>Morning</td></tr>
-  <tr><td>72</td><td>中午 (Zhōngwǔ)</td><td>Noon</td></tr>
-  <tr><td>73</td><td>晚上 (Wǎnshàng)</td><td>Evening</td></tr>
-  <tr><td>74</td><td>时间 (Shíjiān)</td><td>Time</td></tr>
-  <tr><td>75</td><td>年 (Nián)</td><td>Year</td></tr>
-  <tr><td>76</td><td>月 (Yuè)</td><td>Month/Moon</td></tr>
-  <tr><td>77</td><td>日 (Rì)</td><td>Day/Sun</td></tr>
-  <tr><td>78</td><td>人 (Rén)</td><td>Person</td></tr>
-  <tr><td>79</td><td>眼睛 (Yǎnjing)</td><td>Eye</td></tr>
-  <tr><td>80</td><td>耳朵 (Ěrduo)</td><td>Ear</td></tr>
-  <tr><td>81</td><td>嘴巴 (Zuǐba)</td><td>Mouth</td></tr>
-  <tr><td>82</td><td>鼻子 (Bízi)</td><td>Nose</td></tr>
-  <tr><td>83</td><td>头 (Tóu)</td><td>Head</td></tr>
-  <tr><td>84</td><td>手 (Shǒu)</td><td>Hand</td></tr>
-  <tr><td>85</td><td>脚 (Jiǎo)</td><td>Foot</td></tr>
-  <tr><td>86</td><td>心 (Xīn)</td><td>Heart</td></tr>
-  <tr><td>87</td><td>爱 (Ài)</td><td>Love</td></tr>
-  <tr><td>88</td><td>喜欢 (Xǐhuān)</td><td>Like</td></tr>
-  <tr><td>89</td><td>讨厌 (Tǎoyàn)</td><td>Dislike</td></tr>
-  <tr><td>90</td><td>快乐 (Kuàilè)</td><td>Happy</td></tr>
-  <tr><td>91</td><td>伤心 (Shāngxīn)</td><td>Sad</td></tr>
-  <tr><td>92</td><td>生气 (Shēngqì)</td><td>Angry</td></tr>
-  <tr><td>93</td><td>怕 (Pà)</td><td>Afraid</td></tr>
-  <tr><td>94</td><td>笑 (Xiào)</td><td>Laugh</td></tr>
-  <tr><td>95</td><td>哭 (Kū)</td><td>Cry</td></tr>
-  <tr><td>96</td><td>吃 (Chī)</td><td>Eat</td></tr>
-  <tr><td>97</td><td>喝 (Hē)</td><td>Drink</td></tr>
-  <tr><td>98</td><td>睡觉 (Shuìjiào)</td><td>Sleep</td></tr>
-  <tr><td>99</td><td>走 (Zǒu)</td><td>Walk</td></tr>
-  <tr><td>100</td><td>跑 (Pǎo)</td><td>Run</td></tr>
-</table>
-
+    <table>
+      <tr><th>#</th><th>Word</th><th>Meaning</th></tr>
+      <tr><td>1</td><td>你好 (Nǐ hǎo)</td><td>Hello</td></tr>
+      <tr><td>2</td><td>再见 (Zàijiàn)</td><td>Goodbye</td></tr>
+      <tr><td>3</td><td>谢谢 (Xièxiè)</td><td>Thank you</td></tr>
+      <tr><td>4</td><td>请 (Qǐng)</td><td>Please</td></tr>
+      <tr><td>5</td><td>是 (Shì)</td><td>Yes/To be</td></tr>
+      <tr><td>6</td><td>不是 (Bù shì)</td><td>No/Not</td></tr>
+    </table>
   </section>
 
+  <footer>
+    <p>© 2025 Language Learning Project</p>
+  </footer>
 </body>
 </html>
