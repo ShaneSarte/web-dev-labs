@@ -46,7 +46,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
+      margin: 8px;
     }
     .btn:hover {
       background: #0096c7;
@@ -74,85 +74,24 @@
     <a href="#practice">Practice</a>
   </nav>
 
-  <section id="phrases">
-    <h2>Useful Phrases</h2>
-    <label for="language">Choose a language:</label>
-    <select id="language" onchange="loadPhrases()">
-      <option value="spanish">Spanish</option>
-      <option value="french">French</option>
-      <option value="japanese">Japanese</option>
-    </select>
-    <div id="phraseList"></div>
-  </section>
-
-  <section id="practice">
-    <h2>Practice Quiz</h2>
-    <p><b>Translate this:</b> "<span id="quizWord">Thank you</span>"</p>
-    <input type="text" id="answer" placeholder="Type your answer...">
-    <br>
-    <button class="btn" onclick="checkAnswer()">Check</button>
-    <p id="result"></p>
-  </section>
-
-  <script>
-    const phrases = {
-      spanish: {
-        "Hello": "Hola",
-        "Thank you": "Gracias",
-        "Good morning": "Buenos días",
-        "How are you?": "¿Cómo estás?",
-        "I don’t understand": "No entiendo"
-      },
-      french: {
-        "Hello": "Bonjour",
-        "Thank you": "Merci",
-        "Good morning": "Bon matin",
-        "How are you?": "Comment ça va ?",
-        "I don’t understand": "Je ne comprends pas"
-      },
-      japanese: {
-        "Hello": "こんにちは (Konnichiwa)",
-        "Thank you": "ありがとう (Arigatou)",
-        "Good morning": "おはよう (Ohayou)",
-        "How are you?": "お元気ですか？ (Ogenki desu ka?)",
-        "I don’t understand": "わかりません (Wakarimasen)"
-      }
-    };
-
-    let currentLang = "spanish";
-    let quizWord = "Thank you";
-
-    function loadPhrases() {
-      currentLang = document.getElementById("language").value;
-      let phraseList = document.getElementById("phraseList");
-      phraseList.innerHTML = "";
-      for (let [eng, trans] of Object.entries(phrases[currentLang])) {
-        let card = document.createElement("div");
-        card.className = "card";
-        card.textContent = `${eng} → ${trans}`;
-        phraseList.appendChild(card);
-      }
-      // update quiz word
-      document.getElementById("quizWord").textContent = quizWord;
-      document.getElementById("result").textContent = "";
-      document.getElementById("answer").value = "";
-    }
-
-    function checkAnswer() {
-      let ans = document.getElementById("answer").value.trim().toLowerCase();
-      let correct = phrases[currentLang][quizWord].toLowerCase();
-      let result = document.getElementById("result");
-      if (ans === correct || ans.includes(correct.split(" ")[0])) {
-        result.textContent = "✅ Correct! Well done.";
-        result.style.color = "green";
-      } else {
-        result.textContent = "❌ Try again. Hint: " + phrases[currentLang][quizWord];
-        result.style.color = "red";
-      }
-    }
-
-    // load default
-    loadPhrases();
-  </script>
-</body>
-</html>
+  <sec
+tion id="phrases">
+    <h2>Common Phrases</h2>
+    <div class="card">
+      <h3>Hello</h3>
+      <p>Spanish: Hola</p>
+      <p>French: Bonjour</p>
+      <p>German: Hallo</p>
+    </div>
+    <div class="card">
+      <h3>Thank You</h3>
+      <p>Spanish: Gracias</p>
+      <p>French: Merci</p>
+      <p>German: Danke</p>
+    </div>
+    <div class="card">
+      <h3>Please</h3>
+      <p>Spanish: Por favor</p>
+      <p>French: S'il vous plaît</p>
+      <p>German: Bitte</p>
+    </div>
