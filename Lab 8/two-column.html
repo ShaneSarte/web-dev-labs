@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Two-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack vertically by default */
+      gap: 20px;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .image {
+      flex: 1;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* On wider screens (>=768px), display side by side */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexible Two-Column Layout</h1>
+
+  <div class="container">
+    <div class="text">
+      <h2>Welcome to Our Layout</h2>
+      <p>
+        This is a flexible two-column layout. On smaller screens, the text and image stack 
+        vertically for better readability. On larger screens (768px and up), they appear 
+        side by side using Flexbox.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/500x300" alt="Sample Image">
+    </div>
+  </div>
+
+</body>
+</html>
