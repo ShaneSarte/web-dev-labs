@@ -1,3 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4b2e2e;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item h2 {
+  margin-top: 0;
+  color: #6b4226;
+}
+
+.menu-item p {
+  margin: 5px 0 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: #2c7a7b;
+  font-size: 1.1rem;
+}
+
+/* Tablet layout: 2 columns */
+@media (min-width: 600px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop layout: 3 columns */
+@media (min-width: 900px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 
