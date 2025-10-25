@@ -8,13 +8,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>🎨 Dynamic Background Changer</h1>
-    <select id="colorSelect">
-      <option value="lightblue">Light Blue</option>
-      <option value="lightgreen">Light Green</option>
-      <option value="lightcoral">Light Coral</option>
+    <h1>Dynamic Background Changer</h1>
+
+    <select id="colorSelect" onchange="changeBackground()">
+      <option value="">Select a color</option>
+      <option value="#ffb3b3">Soft Red</option>
+      <option value="#b3ffd9">Mint Green</option>
+      <option value="#b3d9ff">Sky Blue</option>
+      <option value="#fff0b3">Light Yellow</option>
+      <option value="#f5b3ff">Lavender Pink</option>
+      <option value="#d9b3ff">Light Purple</option> 
+      <option value="#ffddb3">Peach</option>
+      <option value="#b3ffec">Aqua</option>
     </select>
-    <button onclick="changeBackground()">Change Background</button>
   </div>
 
   <script src="color.js"></script>
