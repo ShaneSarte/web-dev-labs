@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #2a2a2a);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: #1b1b1b;
+  padding: 30px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #eaeaea;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+main.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.menu-item {
+  background: #1f1f1f;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-item h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: block;
+  font-size: 1.1rem;
+  color: #b0d4ff;
+  margin-bottom: 15px;
+}
+
+button {
+  background: linear-gradient(90deg, #555, #888);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #777, #aaa);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
