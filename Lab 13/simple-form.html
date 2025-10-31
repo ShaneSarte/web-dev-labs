@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Form</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #232526, #414345);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      color: #ffd166;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: white;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: #ffd166;
+      border: none;
+      border-radius: 8px;
+      color: #222;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ffb703;
+    }
+
+    .output {
+      margin-top: 20px;
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 10px;
+      width: 350px;
+    }
+
+    .info-box {
+      background: #3a3a3a;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Simple Form</h2>
+    <form id="simpleForm" onsubmit="handleSubmit(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="output" id="outputSection">
+    <h3>Submitted Information:</h3>
+  </div>
+
+  <script>
+    const submissions = [];
+
+    function handleSubmit(event) {
+      event.preventDefault(); // stop page refresh
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      if (!name || !email) return;
+
+      submissions.push({ name, email });
+
+      document.getElementById("simpleForm").reset();
+      displaySubmissions();
+    }
+
+    function displaySubmissions() {
+      const output = document.getElementById("outputSection");
+      output.innerHTML = "<h3>Submitted Information:</h3>";
+
+      submissions.forEach((s, index) => {
+        const div = document.createElement("div");
+        div.classList.add("info-box");
+        div.innerHTML = `<strong>${index + 1}. ${s.name}</strong><br>Email: ${s.email}`;
+        output.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>

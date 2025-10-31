@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Café - Feedback</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffaa00;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    #feedbackList {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 400px;
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .feedback-item {
+      background: #444;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .feedback-item p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Customer Feedback</h1>
+  
+  <form id="feedbackForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="messageField">Feedback Message:</label>
+    <textarea id="messageField" rows="4" placeholder="Write your feedback"></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <p id="message"></p>
+
+  <div id="feedbackList">
+    <h3>Previous Feedback</h3>
+    <div id="feedbackContainer"></div>
+  </div>
+
+  <script>
+    document.getElementById("feedbackForm").onsubmit = function(event) {
+      event.preventDefault(); // stop page refresh
+
+      // Get input values
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const messageField = document.getElementById("messageField").value.trim();
+      const messageDisplay = document.getElementById("message");
+      const feedbackContainer = document.getElementById("feedbackContainer");
+
+      // Validation
+      if (name === "") {
+        messageDisplay.textContent = "⚠️ Name cannot be empty!";
+        messageDisplay.style.color = "orange";
+        return;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        messageDisplay.textContent = "⚠️ Please enter a valid email!";
+        messageDisplay.style.color = "orange";
+        return;
+      }
+
+      if (messageField.length <= 5) {
+        messageDisplay.textContent = "⚠️ Message must be more than 5 characters!";
+        messageDisplay.style.color = "orange";
+        return;
+      }
+
+      // If validation passed
+      messageDisplay.textContent = "✅ Feedback submitted successfully!";
+      messageDisplay.style.color = "#00ff99";
+
+      // Append new feedback
+      const newFeedback = document.createElement("div");
+      newFeedback.classList.add("feedback-item");
+      newFeedback.innerHTML = `
+        <p><strong>${name}</strong> (${email})</p>
+        <p>${messageField}</p>
+      `;
+      feedbackContainer.appendChild(newFeedback);
+
+      // Clear form
+      document.getElementById("feedbackForm").reset();
+    };
+  </script>
+</body>
+</html>
