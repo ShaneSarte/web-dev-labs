@@ -16,7 +16,7 @@
     }
 
     .clock-container {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(101, 99, 99, 0.815);
       padding: 40px 60px;
       border-radius: 20px;
       backdrop-filter: blur(10px);
@@ -26,7 +26,7 @@
 
     .time {
       font-size: 80px;
-      color: #00e5ff;
+      color: #e7c2d6;
       font-weight: 600;
       letter-spacing: 3px;
     }
@@ -41,7 +41,7 @@
 </head>
 <body>
   <div class="clock-container">
-    <div class="time" id="time">00:00:00</div>
+    <div class="time" id="time">00:00:00 AM</div>
     <div class="date" id="date">Loading...</div>
   </div>
 
@@ -49,11 +49,16 @@
     function updateClock() {
       const now = new Date();
 
-      const hours = String(now.getHours()).padStart(2, '0');
+      let hours = now.getHours();
       const minutes = String(now.getMinutes()).padStart(2, '0');
       const seconds = String(now.getSeconds()).padStart(2, '0');
 
-      const timeString = `${hours}:${minutes}:${seconds}`;
+      let ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // makes 0 become 12
+      hours = String(hours).padStart(2, '0');
+
+      const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
       document.getElementById('time').textContent = timeString;
 
       const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
